@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 7, 2017 7:19:32 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.vishrant.database.NIUEmployee" table="NIU_EMPLOYEE">
+		<id name="empId" type="java.lang.Long">
+			<column name="EMP_ID" />
+			<generator class="assigned" />
+		</id>
+		<property generated="never" lazy="false" name="name"
+			type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<many-to-one class="com.vishrant.database.EmployeeType"
+			fetch="join" name="type">
+			<column name="TYPE" />
+		</many-to-one>
+		<property generated="never" lazy="false" name="createDate"
+			type="java.util.Date">
+			<column name="CREATE_DATE" />
+		</property>
+		<property generated="never" lazy="false" name="salary"
+			type="java.lang.Float">
+			<column name="SALARY" />
+		</property>
+	</class>
+</hibernate-mapping>
