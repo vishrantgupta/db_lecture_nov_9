@@ -1,1 +1,1 @@
-# November 9, Database Lecture
+# November 9, Lecture: Database in production
