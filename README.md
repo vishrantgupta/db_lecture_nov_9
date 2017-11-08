@@ -1,1 +1,1 @@
-"# db_lecture_nov_9" 
+# November 9, Database Lecture
